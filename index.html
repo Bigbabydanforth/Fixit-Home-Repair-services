@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FixIt - Home Repair Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section class="nav">
+    <nav>
+    <div class="nav-container">
+        <div class="logo-edit">
+            <img class="logo" src="images/Fit it icon.svg" alt="Fixit logo">
+            <h1 class="logo-text">Fixit</h1>
+        </div>
+        
+        <div class="nav-links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href=""> Services</a></li>
+            </ul>
+        </div>
+        
+        <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Find a professional...">
+                    <button class="search-btn" onclick="search()">Search</button>
+                </div>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+            </ul>
+            <div class="mobile-search">
+                <input type="text" placeholder="Find a professional...">
+                <button onclick="search()">Search</button>
+            </div>
+        </div>
+    </nav>
+</section>
+    
+<section class="hero-section">
+        
+        <div class="hero hero-content">
+            <h1 class="h1"> Something Broken? Let's Fix it Today</h1>
+
+             <p>Tired of things breaking down at the worst possible time? Whether it's a faulty appliance, a broken screen, or a dripping tap, we're here to help. Our team makes repair simple, stress-free, and affordable - so you can stop worrying and get back to the things you love. Quick fixes done right, everytime.</p>
+            <div>
+            <button class="btn-primary">Book a Fix</button>
+            <button class="btn-secondary">View Services</button>
+        </div>
+    </div> 
+</section>
+
+<section class="features">
+    <h2 class="feature-heading">What Makes Us the Right Team for the Job</h2>
+    <div class="features-container">
+        <div class="feature-card">
+            <div class="img-container">
+                <img class="background" src="images/Rectangle 355.png"    alt="Grey background">
+                <img class="second" src="images/speedometer2 1.png" alt="speedometer image">
+            </div>
+
+            <h3>Fast, Reliable Fixes <br> No Guess Work</h3>
+            <p>We get it - when something breaks, you don't have time to waste. That's why we make repairs quick, clear, and consistent. No long wait times, no confusing pricing. Just honest service that shows up when it's needed most. until we run out of words.</p>
+        </div>
+
+        <div class="feature-card"> 
+            <div class="img-container">
+                <img class="background" src="images/Rectangle 355.png"    alt="Gray background">
+                <img class="second" src="images/wrench 1.png" alt="Wrench Image">
+            </div>
+            <h3>Real Skills, <br> Real Results</h3>
+            <p>Every job we take on is handled by someone who knows what they're doing. Whether it's a tech issue, a household fix, or something in between, we bring experience, care, and the right tools to get it done the first time.</p>
+        </div>
+
+        <div class="feature-card">
+             <div class="img-container">
+                <img class="background" src="images/Rectangle 355.png"    alt="Gray background">
+                <img class="second" src="images/heart-fill 1.png" alt="heart image">
+            </div>
+            <h3>Friendly Service <br> Every Step of the Way</h3>
+            <p>We don't just fix things - we make the process easy for you. From the moment you reach out to the moment the job's done, you'll be treated with respect, patience, and a smile. That's the Fixit promise — we keep going until the job’s done.</p>
+
+        </div>
+
+    </div>    
+</section>
+
+<section class="carousel">
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+
+  <div class="slides">
+    <img src="images/slideshow 2 new.jpg" alt="Renovation">
+    <img src="images/slideshow 2.jpg" alt="Construction">
+    <img src="images/slideshow 3 new.jpg" alt="Repair">
+  </div>
+
+  <button class="next" onclick="moveSlide(1)">❯</button>
+</section>
+
+<section class="cta">
+  <div class="cta-inside">
+    <h2>Are you ready to fix it with the best deals?</h2>
+    <button class="btn-primary">Find a Professional →</button>
+  </div>
+</section>
+
+
+
+<section class="footer">
+<footer>
+        <div class="footer-container">
+            <h2>Our top cities</h2>
+            <div class="cities-grid">
+                <div class="city-column">
+                    <a href="#">San Francisco</a>
+                    <a href="#">Miami</a>
+                    <a href="#">San Diego</a>
+                    <a href="#">East Bay</a>
+                    <a href="#">Long Beach</a>
+                </div>
+                <div class="city-column">
+                    <a href="#">Los Angeles</a>
+                    <a href="#">Washington DC</a>
+                    <a href="#">Seattle</a>
+                    <a href="#">Portland</a>
+                    <a href="#">Nashville</a>
+                </div>
+                <div class="city-column">
+                    <a href="#">New York City</a>
+                    <a href="#">Orange County</a>
+                    <a href="#">Atlanta</a>
+                    <a href="#">Charlotte</a>
+                    <a href="#">Denver</a>
+                </div>
+                <div class="city-column">
+                    <a href="#">Chicago</a>
+                    <a href="#">Phoenix</a>
+                    <a href="#">Las Vegas</a>
+                    <a href="#">Sacramento</a>
+                    <a href="#">Oklahoma City</a>
+                </div>
+                <div class="city-column">
+                    <a href="#">Columbus</a>
+                    <a href="#">New Mexico</a>
+                    <a href="#">Albuquerque</a>
+                    <a href="#">Sacramento</a>
+                    <a href="#">New Orleans</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </footer>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Partner with us</a></li>
+                        <li><a href="#">Ride with us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund & Cancellation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>FOLLOW US</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="newsletter-section">
+                        <p>Receive exclusive offers in your mailbox</p>
+                        <form class="newsletter-form">
+                            <div class="email-input-wrapper">
+                                <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                                </svg>
+                                <input type="email" placeholder="Enter Your email" required>
+                            </div>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>All rights Reserved © <a href="#">conrad & danforth</a>, 2025</div>
+                <div>Made by <a href="#">conrad & danforth</a></div>
+            </div>
+        </div>
+    </footer>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
